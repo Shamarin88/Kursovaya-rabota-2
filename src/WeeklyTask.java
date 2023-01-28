@@ -8,9 +8,4 @@ public class WeeklyTask extends Task implements Repatable {
     public boolean checkOccurance(LocalDateTime requestedDate) {
         return getFirstDate().getDayOfWeek().equals(requestedDate.getDayOfWeek());
     }
-
-    @Override
-    public LocalDateTime getFirstDate() {
-        return null;
-    }
 }

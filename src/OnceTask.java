@@ -8,9 +8,4 @@ public class OnceTask extends Task implements Repatable {
     public boolean checkOccurance(LocalDateTime requestedDate) {
         return getFirstDate().toLocalDate().equals(requestedDate.toLocalDate());
     }
-
-    @Override
-    public LocalDateTime getFirstDate() {
-        return null;
-    }
 }

@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class DailyTask extends Task implements Repatable {
@@ -9,10 +8,5 @@ public class DailyTask extends Task implements Repatable {
        public boolean checkOccurance(LocalDateTime requestedDate) {
            return getFirstDate().toLocalDate().equals(requestedDate.toLocalDate());
        }
-
-    @Override
-    public LocalDateTime getFirstDate() {
-        return null;
-    }
 }
 
